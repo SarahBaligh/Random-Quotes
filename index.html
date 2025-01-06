@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quotes App</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Niconne&family=Playwrite+AU+SA:wght@100..400&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+  <!-- Main Style -->
+  <link rel="stylesheet" href="./CSS/style.css" />
+</head>
+
+<body>
+  <div class="main vh-100 pt-5">
+    <div class="container justify-content-center align-items-center text-center ">
+      <div>
+        <h1 class="text-black">Quote of the Day</h1>
+        <div class="box col-md-8 m-auto mt-5 p-4">
+          <p class="text-dark mt-5 mb-4 fs-4">
+            Get a random quote!
+          </p>
+
+          <p id="newQuote" class="my-4 fs-1"></p>
+          <p id="author" class="text-end fs-5 fst-italic"></p>
+          <button class="btn py-3 px-5 fs-6" onclick="generateQuote()" id="newQuoteBtn">New Quote</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./JS/bootstrap.bundle.min.js"></script>
+  <script src="./JS/main.js"></script>
+</body>
+
+</html>
